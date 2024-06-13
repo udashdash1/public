@@ -1,0 +1,95 @@
+{
+  "name": "EigenDA",
+  "research": [
+    {
+      "author": "tokensight",
+      "title": "Tokensight | EigenDA: Cryptoeconomic Analysis",
+      "url": "https://paragraph.xyz/@tokensightxyz/eigenda-a-cryptoeconomic-analysis"
+    },
+    {
+      "author": "EigenLayer",
+      "title": "EigenLayer | Intro to EigenDA",
+      "url": "https://www.blog.eigenlayer.xyz/intro-to-eigenda-hyperscale-data-availability-for-rollups/"
+    }
+  ],
+  "riskAnalysis": {
+    "sections": [
+      {
+        "category": "AVS",
+        "risks": [
+          {
+            "name": "Business Model",
+            "elements": [
+              {
+                "description": "Dual Staking + Dual Quorum",
+                "risk": "medium",
+                "comment": "Dual Staking involves moderate risk as it relies on both ETH restakers and rollup native token stakers, adding complexity to token security and value dynamics. EigenDA also features a Dual Quorum system, where two independent quorums (ETH quorum + Rollup quorum) attest to availability of data. Both quorums must be compromised for EigenDA to fail."
+              }
+            ]
+          },
+          {
+            "name": "Protocol Security",
+            "elements": [
+              {
+                "description": "GitHub Code Coverage: 55%",
+                "comment": "Coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA.",
+                "links": [
+                  {
+                    "label": "view github",
+                    "href": "https://github.com/Layr-Labs/eigenda"
+                  }
+                ],
+                "risk": "medium"
+              }
+            ]
+          },
+          {
+            "name": "Operator Profile",
+            "elements": [
+              {
+                "description": "Reputation & Entrenchment Status",
+                "risk": "high",
+                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "EigenDA",
+        "risks": [
+          {
+            "name": "Rollups",
+            "elements": [
+              {
+                "description": "Blob Sequencer Decentralization Status",
+                "risk": "low",
+                "comment": "EigenDA allows rollup nodes to interact directly with a majority of EigenDA nodes, alleviating centralization pressures by bypassing the need for a single leader to order the data. Existing solutions rely on a single leader to sequence blobs, introducing a potential censorship chokepoint."
+              }
+            ]
+          },
+          {
+            "name": "Disperser",
+            "elements": [
+              {
+                "description": "Disperser-to-Node Communication Type",
+                "comment": "EigenDA's Disperser sends blobs straight to its operators through direct communication (unicast). In traditional methods, operators receive data blobs from peers and re-broadcast them to others, impacting system liveness.",
+                "risk": "low"
+              }
+            ]
+          },
+          {
+            "name": "BFT Validator Profile",
+            "elements": [
+              {
+                "description": "Decentralization & Security Status",
+                "risk": "medium",
+                "comment": "On top of the existing 1/3 or 2/3 stake attack thresholds (depending on the attack type) BFT consensus imposes, TEE & DVT are additional security measures worth considering for EigenDA: <ul><li><b>TEEs</b> (Trusted Execution Environments) consist of secure portions of hardware that generate and store validator keys and databases of previously signed data, in a secure manner without compromising scalability.</li><li><b>DVT</b> (Distributed Validator Technology) incentivizes client diversity through the distribution of the validation process across multiple operators, reducing the risk of a single chokepoint in case of failure/corruption.</li></ul>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
