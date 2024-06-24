@@ -1,0 +1,90 @@
+{
+  "name": "Omni Network",
+  "research": [
+    {
+      "author": "tokensight",
+      "title": "Tokensight | Omni Network: A Cryptoeconomic Risk Analysis",
+      "url": "https://paragraph.xyz/@tokensightxyz/omni-a-cryptoeconomic-analysis"
+    }
+  ],
+  "riskAnalysis": {
+    "sections": [
+      {
+        "category": "AVS",
+        "risks": [
+          {
+            "name": "Business Model",
+            "elements": [
+              {
+                "description": "Dual Staking + Dual Quorum",
+                "risk": "medium",
+                "comment": "Dual Staking involves moderate risk as it relies on both ETH restakers and OMNI native token stakers, adding complexity to token security and value dynamics. Omni features a Dual Quorum system, where two independent quorums (ETH quorum + Omni quorum) attest to the accurate realying of messages. Both quorums must be compromised for Omni to fail."
+              }
+            ]
+          },
+          {
+            "name": "Protocol Security",
+            "elements": [
+              {
+                "description": "Code Audits & GitHub Code Coverage",
+                "comment": "Unknown number of audits performed and unknown GitHub code coverage percentage.\n\nOnly disclaimer on protocol security is the setup of a bug bounty program.",
+                "links": [
+                  {
+                    "label": "view github",
+                    "href": "https://github.com/omni-network/omni/blob/main/SECURITY.md"
+                  }
+                ],
+                "risk": "unknown"
+              }
+            ]
+          },
+          {
+            "name": "Operator Profile",
+            "elements": [
+              {
+                "description": "Reputation & Entrenchment Status",
+                "risk": "high",
+                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Omni",
+        "risks": [
+          {
+            "name": "Execution Layer",
+            "elements": [
+              {
+                "description": "Omni EVM Engine Health",
+                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.\n\n*Incorporating transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.*",
+                "risk": "low"
+              }
+            ]
+          },
+          {
+            "name": "Relayer",
+            "elements": [
+              {
+                "description": "Relayer Security Status",
+                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.\n\nUnknown details regarding the Relayer’s permissionless and centralization. Lack of track record on the Relayer’s decision-making on different factors like gas limits or data sizes submitted.\n\n*A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.*",
+                "risk": "medium"
+              }
+            ]
+          },
+          {
+            "name": "CometBFT Validator Profile",
+            "elements": [
+              {
+                "description": "Decentralization & Security Status",
+                "risk": "medium",
+                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness. It uses ABCI++, an advanced version of the Application Blockchain Interface, which improves compatibility and supports a diverse range of applications, thereby reducing susceptibility to bugs and network latency.\n\n*TEE, DVT, shared sequencing, and pre-confing solution for XMsg cross-rollup fast-finality would all be worth considering.*"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "research": [
     {
       "author": "tokensight",
-      "title": "Tokensight | EigenDA: Cryptoeconomic Analysis",
+      "title": "Tokensight | EigenDA: A Cryptoeconomic Risk Analysis",
       "url": "https://paragraph.xyz/@tokensightxyz/eigenda-a-cryptoeconomic-analysis"
     },
     {
@@ -31,8 +31,8 @@
             "name": "Protocol Security",
             "elements": [
               {
-                "description": "GitHub Code Coverage: 55%",
-                "comment": "Coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA.",
+                "description": "GitHub Code Coverage",
+                "comment": "Code coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA. It sits at <b>56%</b>, as of 6/24/2024.",
                 "links": [
                   {
                     "label": "view github",
