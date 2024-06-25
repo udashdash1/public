@@ -80,7 +80,7 @@
               {
                 "description": "Decentralization & Security Status",
                 "risk": "medium",
-                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness within the network. It uses ABCI++, an advanced version of the Application Blockchain Interface, which supports and improves application compatibility, thereby reducing bug susceptibility and network latency.<br><br><i>TEE, DVT, shared sequencing, and pre-confirmation solutions for more secure XMsg cross-rollup fast-finality would all be worth considering.</i>"
+                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness within the network. It uses ABCI++, an advanced version of the Application Blockchain Interface, which supports and improves compatibility with DApps, thereby reducing bug susceptibility and network latency.<br><br><i>TEE, DVT, shared sequencing, and pre-confirmation solutions for more secure XMsg cross-rollup fast-finality would all be worth considering.</i>"
               }
             ]
           }
