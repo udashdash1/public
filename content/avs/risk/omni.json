@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Relayer Security Status",
-                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>Unknown details regarding the Relayer’s permissionless and centralization. As fo now, there is also a lack of a track record on the Relayer’s decision-making performance in submitting XMsgs to destinations chains, with regard to factors such as gas limits or data sizes submitted.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
+                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>Unknown details regarding the Relayer’s permissionless and centralization. As of now, there is also a lack of a track record on the Relayer’s decision-making performance in submitting XMsgs to destinations chains, with regard to factors such as gas limits or data sizes submitted.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
                 "risk": "medium"
               }
             ]
