@@ -59,7 +59,7 @@
             "elements": [
               {
                 "description": "Omni EVM Engine Health",
-                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.<br><br><i>Incorporating transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.</i>",
+                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.<br><br><i>Pursuing transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.</i>",
                 "risk": "low"
               }
             ]
