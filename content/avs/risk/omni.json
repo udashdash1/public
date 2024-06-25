@@ -19,7 +19,7 @@
               {
                 "description": "Dual Staking + Dual Quorum",
                 "risk": "medium",
-                "comment": "Dual Staking involves moderate risk as it relies on both ETH restakers and OMNI native token stakers, adding complexity to token security and value dynamics. Omni features a Dual Quorum system, where two independent quorums (ETH quorum + Omni quorum) attest to the accurate realying of messages. Both quorums must be compromised for Omni to fail."
+                "comment": "Dual Staking involves moderate risk as it relies on both ETH restakers and OMNI native token stakers, adding complexity to token security and value dynamics. Omni features a Dual Quorum system, where two independent quorums (ETH quorum + Omni quorum) attest to the accurate relaying of messages. Both quorums must be compromised for Omni to fail."
               }
             ]
           },
@@ -28,7 +28,7 @@
             "elements": [
               {
                 "description": "Code Audits & GitHub Code Coverage",
-                "comment": "Unknown number of audits performed and unknown GitHub code coverage percentage.\n\nOnly disclaimer on protocol security is the setup of a bug bounty program.",
+                "comment": "Unknown number of audits performed and unknown GitHub code coverage percentage.<br><br>Only disclaimer on protocol security is the setup of a bug bounty program.",
                 "links": [
                   {
                     "label": "view github",
@@ -59,7 +59,7 @@
             "elements": [
               {
                 "description": "Omni EVM Engine Health",
-                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.\n\n*Incorporating transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.*",
+                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.<br><br><i>Incorporating transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.</i>",
                 "risk": "low"
               }
             ]
@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Relayer Security Status",
-                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.\n\nUnknown details regarding the Relayer’s permissionless and centralization. Lack of track record on the Relayer’s decision-making on different factors like gas limits or data sizes submitted.\n\n*A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.*",
+                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>Unknown details regarding the Relayer’s permissionless and centralization. Lack of track record on the Relayer’s decision-making on different factors like gas limits or data sizes submitted.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
                 "risk": "medium"
               }
             ]
@@ -80,7 +80,7 @@
               {
                 "description": "Decentralization & Security Status",
                 "risk": "medium",
-                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness. It uses ABCI++, an advanced version of the Application Blockchain Interface, which improves compatibility and supports a diverse range of applications, thereby reducing susceptibility to bugs and network latency.\n\n*TEE, DVT, shared sequencing, and pre-confing solution for XMsg cross-rollup fast-finality would all be worth considering.*"
+                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness. It uses ABCI++, an advanced version of the Application Blockchain Interface, which improves compatibility and supports a diverse range of applications, thereby reducing susceptibility to bugs and network latency.<br><br><i>TEE, DVT, shared sequencing, and pre-config solution for XMsg cross-rollup fast-finality would all be worth considering.</i>"
               }
             ]
           }

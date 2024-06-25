@@ -60,7 +60,7 @@
               {
                 "description": "Security of State Proof Generation",
                 "risk": "low",
-                "comment": "Any given Committee is designed to securely and provably generate cross-chain state proofs for optimistic rollups. It requires and generates inductive ZK proofs where validations are performed toward previous blocks and aggregated BLS signatures are generated to attest to the validity of the present block’s state.\n\nBLS signatures can be expensive to compute at scale."
+                "comment": "Any given Committee is designed to securely and provably generate cross-chain state proofs for optimistic rollups. It requires and generates inductive ZK proofs where validations are performed toward previous blocks and aggregated BLS signatures are generated to attest to the validity of the present block’s state.<br><br>BLS signatures can be expensive to compute at scale."
               }
             ]
           },
@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Decentralization & Security Status",
-                "comment": "At least 2/3 of the present Committee must correctly sign each block. The recursive nature of State Committees enables them to ensure continuous proof validity and cross-chain relaying.<br><br>Similarly to Lagrange’s ZK Coprocessor, even in the case of a 2/3 stake attack toward the Prover network, ZK-state proof generation is not affected; only slight liveness issues may occur.<br><br><b>Being structured as a pure ZK system, Lagrange State Committees are extremely airtight toward potential safety exploits.\n\nDegree of decentralization in the sequencer and the overall Prover network are unknown.</b>",
+                "comment": "At least 2/3 of the present Committee must correctly sign each block. The recursive nature of State Committees enables them to ensure continuous proof validity and cross-chain relaying.<br><br>Similarly to Lagrange’s ZK Coprocessor, even in the case of a 2/3 stake attack toward the Prover network, ZK-state proof generation is not affected; only slight liveness issues may occur.<br><br><i>Being structured as a pure ZK system, Lagrange State Committees are extremely airtight toward potential safety exploits.<br><br>Degree of decentralization in the sequencer and the overall Prover network are unknown.</i>",
                 "risk": "low"
               }
             ]
