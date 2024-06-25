@@ -52,7 +52,7 @@
         ]
       },
       {
-        "category": "Lagrange ZK Coprocessor",
+        "category": "Lagrange ZK Coprocessor Protocol",
         "risks": [
           {
             "name": "Coprocessor & Verifiable Database",
