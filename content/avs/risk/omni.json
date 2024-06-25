@@ -59,7 +59,7 @@
             "elements": [
               {
                 "description": "Omni EVM Engine Health",
-                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. It also has complete equivalence with external applications, through ABCI++ integration, smoothing out susceptibility to bug issues.<br><br><i>Pursuing transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.</i>",
+                "comment": "Omni’s EVM integrates an anti-Sybil mechanism to deter against the submission of malicious or spammy transactions. Additionally, it has complete equivalence with external applications, through an ABCI++ integration along Ethereum's Engine API, smoothing out susceptibility to bug issues.<br><br><i>Pursuing transaction encryption on its mempool should be considered for increased security and privacy in XMsg processing.</i>",
                 "risk": "low"
               }
             ]
@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Relayer Security Status",
-                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>Unknown details regarding the Relayer’s permissionless and centralization. Lack of track record on the Relayer’s decision-making on different factors like gas limits or data sizes submitted.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
+                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>Unknown details regarding the Relayer’s permissionless and centralization. As fo now, there is also a lack of a track record on the Relayer’s decision-making performance in submitting XMsgs to destinations chains, with regard to factors such as gas limits or data sizes submitted.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
                 "risk": "medium"
               }
             ]
@@ -80,7 +80,7 @@
               {
                 "description": "Decentralization & Security Status",
                 "risk": "medium",
-                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness. It uses ABCI++, an advanced version of the Application Blockchain Interface, which improves compatibility and supports a diverse range of applications, thereby reducing susceptibility to bugs and network latency.<br><br><i>TEE, DVT, shared sequencing, and pre-config solution for XMsg cross-rollup fast-finality would all be worth considering.</i>"
+                "comment": "CometBFT is adopted as the battle-tested, sub-second finality BFT mechanism, ensuring liveness within the network. It uses ABCI++, an advanced version of the Application Blockchain Interface, which supports and improves application compatibility, thereby reducing bug susceptibility and network latency.<br><br><i>TEE, DVT, shared sequencing, and pre-confirmation solutions for more secure XMsg cross-rollup fast-finality would all be worth considering.</i>"
               }
             ]
           }
