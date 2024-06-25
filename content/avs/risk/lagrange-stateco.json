@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Decentralization & Security Status",
-                "comment": "At least 2/3 of the present Committee must correctly sign each block. The recursive nature of State Committees enables them to ensure continuous proof validity and cross-chain relaying.<br>Similarly to Lagrange’s ZK Coprocessor, even in the case of a 2/3 stake attack toward the Prover network, ZK-state proof generation is not affected; only slight liveness issues may occur.<br><br><b>Being structured as a pure ZK system, Lagrange State Committees are extremely airtight toward potential safety exploits.\n\nDegree of decentralization in the sequencer and the overall Prover network are unknown.</b>",
+                "comment": "At least 2/3 of the present Committee must correctly sign each block. The recursive nature of State Committees enables them to ensure continuous proof validity and cross-chain relaying.<br><br>Similarly to Lagrange’s ZK Coprocessor, even in the case of a 2/3 stake attack toward the Prover network, ZK-state proof generation is not affected; only slight liveness issues may occur.<br><br><b>Being structured as a pure ZK system, Lagrange State Committees are extremely airtight toward potential safety exploits.\n\nDegree of decentralization in the sequencer and the overall Prover network are unknown.</b>",
                 "risk": "low"
               }
             ]
