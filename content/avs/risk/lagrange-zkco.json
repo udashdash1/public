@@ -19,7 +19,7 @@
               {
                 "description": "Pure Wallet",
                 "risk": "low",
-                "comment": "\"Pure Wallet\" business model (the most secure one for newborn protocols) where no native AVS token is involved, and user fees are paid in a purely neutral denomination (like ETH)."
+                "comment": "\"Pure Wallet\" is an EigenLayer AVS business model (the most secure one for newborn protocols) where no native AVS token is involved, and user fees are paid in a purely neutral denomination (like ETH)."
               }
             ]
           },
