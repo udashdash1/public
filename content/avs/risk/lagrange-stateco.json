@@ -60,7 +60,7 @@
               {
                 "description": "Security of State Proof Generation",
                 "risk": "low",
-                "comment": "Any given Committee is designed to securely and provably generate cross-chain state proofs for optimistic rollups. It requires and generates inductive ZK proofs where validations are performed toward previous blocks and aggregated BLS signatures are generated to attest to the validity of the present block’s state.<br><br>BLS signatures can be expensive to compute at scale."
+                "comment": "Any given Committee is designed to securely and provably generate cross-chain state proofs for optimistic rollups. It requires and generates inductive ZK proofs where validations are performed toward previous blocks and aggregated BLS signatures are generated to attest to the validity of the present block’s state.<br><br><i>BLS signatures can be expensive to compute at scale. An aggregate, more efficient signature scheme would be worth considering.</i>"
               }
             ]
           },
