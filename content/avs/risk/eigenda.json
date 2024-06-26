@@ -36,7 +36,7 @@
                 "comment": "One <a href=\"https://github.com/Layr-Labs/eigenlayer-middleware/tree/dev/audits\">code audit</a> performed by one entity. <i>More entities performing code audits would be advised.</i> <br><br>Code coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA. It sits at <b>56%</b>, as of 6/24/2024.",
                 "links": [
                   {
-                    "label": "view code coverage",
+                    "label": "view github code coverage",
                     "href": "https://github.com/Layr-Labs/eigenda"
                   }
                 ],
