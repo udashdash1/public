@@ -55,7 +55,7 @@
         "category": "Lagrange ZK Coprocessor Protocol",
         "risks": [
           {
-            "name": "Coprocessor & Verifiable Database",
+            "name": "ZK Coprocessor & Verifiable Database",
             "elements": [
               {
                 "description": "Database Replication & Query Processing",
