@@ -69,7 +69,7 @@
             "elements": [
               {
                 "description": "Relayer Security Status",
-                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification.<br><br>The Relayer is fully permissionless, therefore decentralized. Currently, there is no track record of its decision-making based performance in submitting XMsgs to destination chains.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
+                "comment": "The Relayer generates Merkle multi-proofs for efficient XBlock submission and verification. It is fully permissionless once their authenticity is assured by the network, making it therefore a decentralized service. Currently, there is no track record of its decision-making based performance in submitting XMsgs to destination chains.<br><br><i>A DA solution is recommended to address complex verification and increased computational cost of validator signatures and Merkle multi-proofs at scale.</i>",
                 "risk": "medium"
               }
             ]
