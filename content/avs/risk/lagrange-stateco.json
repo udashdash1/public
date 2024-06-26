@@ -28,7 +28,7 @@
             "elements": [
               {
                 "description": "Code Audits",
-                "comment": "Three successive audits performed by one entity.",
+                "comment": "Three successive audits performed by one entity. <i>Although an overly quantitative approach, more entities performing audits would be advised.</i>",
                 "links": [
                   {
                     "label": "view github",
