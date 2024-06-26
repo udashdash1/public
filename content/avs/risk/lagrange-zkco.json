@@ -28,7 +28,7 @@
             "elements": [
               {
                 "description": "Code Audits & GitHub Code Coverage",
-                "comment": "Three successive audits performed by one entity. <i>Although an overly qualitative approach, different entities performing audits would be advised.</i> <br><br>Unknown GiHub code coverage.",
+                "comment": "Three successive audits performed by one entity. <i>Although an overly qualitative metric, different entities performing audits would be advised.</i> <br><br>Unknown GiHub code coverage.",
                 "links": [
                   {
                     "label": "view audits",
