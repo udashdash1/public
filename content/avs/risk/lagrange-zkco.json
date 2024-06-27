@@ -58,7 +58,7 @@
             "name": "ZK Coprocessor & Verifiable Database",
             "elements": [
               {
-                "description": "Database Replication & Query Processing",
+                "description": "Database Replication & Query Processing Security",
                 "risk": "low",
                 "comment": "Lagrange’s ZK Coprocessor indexes and processes the storing of the original database at each block and, through zero-knowledge computations, provably “inserts” this data into a replicated Verifiable Database, which then supports efficient and provable queries. These queries run in parallel over this new database when external protocols/applications request it.<br><br>Provers are rewarded for timely and valid proof generation."
               }
