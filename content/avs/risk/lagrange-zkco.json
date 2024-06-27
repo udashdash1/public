@@ -19,7 +19,7 @@
               {
                 "description": "Pure Wallet",
                 "risk": "low",
-                "comment": "\"Pure Wallet\" is an EigenLayer AVS business model (the most secure one for newborn protocols) where no native AVS token is involved, and user fees are paid in a purely neutral denomination (like ETH). <i>Currently, it appears that Pure Wallet is the model adopted by Lagrange, though further details are lacking</i>."
+                "comment": "\"Pure Wallet\" is an EigenLayer AVS business model (the most secure one for newborn protocols) where no native AVS token is involved, and user fees are paid in a purely neutral denomination (like ETH). <i>Currently, it appears that Pure Wallet is the model adopted by Lagrange, though more concrete details are lacking</i>."
               }
             ]
           },
