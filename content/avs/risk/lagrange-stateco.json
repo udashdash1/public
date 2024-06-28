@@ -45,7 +45,7 @@
               {
                 "description": "Reputation & Entrenchment Status",
                 "risk": "high",
-                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
+                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched Lagrange State Committees' operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
               }
             ]
           }
