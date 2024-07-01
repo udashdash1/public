@@ -45,7 +45,13 @@
               {
                 "description": "Reputation & Entrenchment Status",
                 "risk": "high",
-                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched Omni's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
+                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched Omni's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context. <i>All AVSs will be assigned a high risk category at this early stage.</i>",
+                "links": [
+                  {
+                    "label": "view full operator list",
+                    "href": "https://app.eigenlayer.xyz/avs/0xed2f4d90b073128ae6769a9a8d51547b1df766c8"
+                  }
+                ]
               }
             ]
           }

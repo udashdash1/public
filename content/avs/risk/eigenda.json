@@ -36,7 +36,7 @@
                 "comment": "One <a href=\"https://github.com/Layr-Labs/eigenlayer-middleware/tree/dev/audits\">code audit</a> performed by one entity. <i>More entities performing code audits would be advised.</i> <br><br>Code coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA. It sits at <b>56%</b>, as of 6/24/2024.",
                 "links": [
                   {
-                    "label": "view github code coverage",
+                    "label": "view github",
                     "href": "https://github.com/Layr-Labs/eigenda"
                   }
                 ],
@@ -50,7 +50,13 @@
               {
                 "description": "Reputation & Entrenchment Status",
                 "risk": "high",
-                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context."
+                "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context. <i>All AVSs will be assigned a high risk category at this early stage.</i>",
+                "links": [
+                  {
+                    "label": "view full operator list",
+                    "href": "https://app.eigenlayer.xyz/avs/0x870679e138bcdf293b7ff14dd44b70fc97e12fc0"
+                  }
+                ]
               }
             ]
           }
