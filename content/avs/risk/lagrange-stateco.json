@@ -61,7 +61,7 @@
         "category": "Lagrange State Committees Protocol",
         "risks": [
           {
-            "name": "Committee State Proofs",
+            "name": "Committee State Proofs Security",
             "elements": [
               {
                 "description": "Security of State Proof Generation",
