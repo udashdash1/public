@@ -28,7 +28,7 @@
             "elements": [
               {
                 "description": "Code Audits & GitHub Code Coverage",
-                "comment": "Three successive audits performed by one entity. <i>Although an overly qualitative metric, different entities performing audits would be advised.</i> <br><br>The code coverage for this AVS is very high.",
+                "comment": "Three successive audits performed by one entity. <i>Although an overly qualitative metric, different entities performing audits would be advised.</i> <br><br>The code coverage for this AVS is very high, although not publicly disclosed.",
                 "links": [
                   {
                     "label": "view audits",
