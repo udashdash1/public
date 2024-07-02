@@ -1,0 +1,82 @@
+{
+    "name": "Brevis coChain",
+    "published": false,
+    "research": [
+      {
+        "author": "tokensight",
+        "title": "Tokensight | Brevis coChain: A Cryptoeconomic Risk Analysis",
+        "url": "https://paragraph.xyz/@tokensightxyz/lagrange-cryptoeconomic-risk-analysis"
+      }
+    ],
+    "riskAnalysis": {
+      "sections": [
+        {
+          "category": "AVS",
+          "risks": [
+            {
+              "name": "Business Model",
+              "elements": [
+                {
+                  "description": "Pure Wallet",
+                  "risk": "low",
+                  "comment": "\"Pure Wallet\" is an EigenLayer AVS business model (the most secure one for newborn protocols) where no native AVS token is involved, and user fees are paid in a purely neutral denomination (like ETH). <i>Currently, it appears that Pure Wallet is the model adopted by Brevis, though further details are lacking</i>."
+                }
+              ]
+            },
+            {
+              "name": "Protocol Security",
+              "elements": [
+                {
+                  "description": "Code Audits & GitHub Code Coverage",
+                  "comment": "Unknown number of audits performed and unknown GitHub code coverage percentage.",
+                  "risk": "unknown"
+                }
+              ]
+            },
+            {
+              "name": "Operator Profile",
+              "elements": [
+                {
+                  "description": "Reputation & Entrenchment Status",
+                  "risk": "high",
+                  "comment": "Since we are at the very early stages of EigenLayer, operators' reputation was classified as unknown. Operator's entrenchment level indicates how entrenched Brevis ZK Coprocessor's operators are on other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context. <br><br><i>All AVSs are assigned a high operator profile risk at this early stage.</i>",
+                  "links": [
+                    {
+                      "label": "view full operator list",
+                      "href": "https://app.eigenlayer.xyz/avs/0x9fc952bdcbb7daca7d420fa55b942405b073a89d"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Brevis ZK Coprocessor Protocol",
+          "risks": [
+            {
+              "name": "ZK Coprocessor",
+              "elements": [
+                {
+                  "description": "Proof & Query Processing Security",
+                  "risk": "low",
+                  "comment": "Brevis ZK Coprocessor indexes and processes the storing of the original database at each block and, through zero-knowledge computations, provably “inserts” this data into a replicated Verifiable Database, which then supports efficient and provable queries. These queries run in parallel over this new database when external protocols/applications request it.<br><br>Provers are rewarded for timely and valid proof generation."
+                }
+              ]
+            },
+            {
+              "name": "zkFabric Prover Network Profile",
+              "elements": [
+                {
+                  "description": "Decentralization & Security Status",
+                  "comment": "The Coprocessor uses the MapReduce framework along with ZK proofs (<b>zkMapReduce</b>) to ensure the correctness of distributed computations across nodes to handle large-scale databases efficiently and in parallel by dividing it into chunks. Each node generates proofs for their assigned chunk, which are then recursively combined into a single proof, validating the entire process.<br><br>Even in the case of a 2/3 stake attack toward the Prover network, ZK-proof generation is not affected; only slight liveness issues may occur.<br><br><i>Being structured as a pure ZK system, Brevis ZK Coprocessor is extremely airtight toward potential safety exploits.<br><br>Degree of decentralization in the sequencer and the overall Prover network are unknown.</i>",
+                  "risk": "low"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
