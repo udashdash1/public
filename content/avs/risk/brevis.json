@@ -28,8 +28,14 @@
               "elements": [
                 {
                   "description": "Code Audits & GitHub Code Coverage",
-                  "comment": "Unknown number of audits performed and unknown GitHub code coverage percentage.",
-                  "risk": "unknown"
+                  "comment": "One code audit has been performed and the GitHub code coverage percentage has not been publicly disclosed.",
+                  "risk": "medium",
+                  "links": [
+                    {
+                      "label": "view audit",
+                      "href": "https://github.com/brevis-network/brevis-contracts-avs/blob/main/audit/SlowMist%20Audit%20Report%20-%20Brevis%20Contracts%20AVS.pdf"
+                    }
+                  ],
                 }
               ]
             },
