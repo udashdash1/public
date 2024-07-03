@@ -58,7 +58,7 @@
           ]
         },
         {
-          "category": "Brevis ZK Coprocessor Protocol",
+          "category": "Brevis coChain ZK Coprocessor Protocol",
           "risks": [
             {
               "name": "ZK Coprocessor",
