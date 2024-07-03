@@ -1,0 +1,42 @@
+[
+  {
+    "name": "EigenDA",
+    "research": [
+      {
+        "author": "tokensight",
+        "title": "Tokensight | EigenDA: A Cryptoeconomic Risk Analysis",
+        "url": "https://paragraph.xyz/@tokensightxyz/eigenda-a-cryptoeconomic-analysis"
+      }
+    ]
+  },
+  {
+    "name": "Espresso Systems",
+    "research": [
+      {
+        "author": "tokensight",
+        "title": "Tokensight | Espresso Systems: A Cryptoeconomic Risk Analysis",
+        "url": "https://paragraph.xyz/@tokensightxyz/espresso-a-cryptoeconomic-analysis"
+      }
+    ]
+  },
+  {
+    "name": "Lagrange Labs",
+    "research": [
+      {
+        "author": "tokensight",
+        "title": "Tokensight | Lagrange Labs: A Cryptoeconomic Risk Analysis",
+        "url": "https://paragraph.xyz/@tokensightxyz/lagrange-cryptoeconomic-risk-analysis"
+      }
+    ]
+  },
+  {
+    "name": "Omni Network",
+    "research": [
+      {
+        "author": "tokensight",
+        "title": "Tokensight | Omni Network: A Cryptoeconomic Risk Analysis",
+        "url": "https://paragraph.xyz/@tokensightxyz/omni-a-cryptoeconomic-analysis"
+      }
+    ]
+  }
+]
