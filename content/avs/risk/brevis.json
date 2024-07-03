@@ -28,7 +28,7 @@
               "elements": [
                 {
                   "description": "Code Audits & GitHub Code Coverage",
-                  "comment": "One code audit has been performed and the GitHub code coverage percentage has not been publicly disclosed.",
+                  "comment": "One code audit has been performed. GitHub code coverage percentage has not been publicly disclosed.",
                   "risk": "medium",
                   "links": [
                     {
