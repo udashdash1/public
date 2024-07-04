@@ -61,7 +61,7 @@
           "category": "Brevis coChain ZK Coprocessor Protocol",
           "risks": [
             {
-              "name": "ZK Coprocessor",
+              "name": "ZK Coprocessor Security",
               "elements": [
                 {
                   "description": "Proof & Query Processing Security",
