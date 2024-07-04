@@ -66,16 +66,16 @@
                 {
                   "description": "Proof & Query Processing Security",
                   "risk": "low",
-                  "comment": "Summary of the zk modules should be enough. Brevis ZK Coprocessor indexes and processes the storing of the original database at each block and, through zero-knowledge computations, provably “inserts” this data into a replicated Verifiable Database, which then supports efficient and provable queries. These queries run in parallel over this new database when external protocols/applications request it.<br><br>Provers are rewarded for timely and valid proof generation."
+                  "comment": "Brevis enables smart contracts to trustlessly access full historical on-chain data, such as states, transactions, and events, from different chains. Developers can build and deploy customized queries using Brevis's SDK, which runs computations and generates off-chain ZK proofs. These results, along with the ZK proofs, are submitted back on-chain for dApps' smart contracts to verify and consume. Aided by restaked pooled security, advanced ZK cryptographic algorithms, and large-scale parallelization, Brevis efficiently processes complex computations swiftly on trustless data."
                 }
               ]
             },
             {
-              "name": "zkFabric Prover Network Profile",
+              "name": "Prover Network Profile",
               "elements": [
                 {
                   "description": "Decentralization & Security Status",
-                  "comment": "Consensus section here essentially. The Coprocessor uses the MapReduce framework along with ZK proofs (<b>zkMapReduce</b>) to ensure the correctness of distributed computations across nodes to handle large-scale databases efficiently and in parallel by dividing it into chunks. Each node generates proofs for their assigned chunk, which are then recursively combined into a single proof, validating the entire process.<br><br>Even in the case of a 2/3 stake attack toward the Prover network, ZK-proof generation is not affected; only slight liveness issues may occur.<br><br><i>Being structured as a pure ZK system, Brevis ZK Coprocessor is extremely airtight toward potential safety exploits.<br><br>Degree of decentralization in the sequencer and the overall Prover network are unknown.</i>",
+                  "comment": "The Prover Network ensures the generation of ZK Consensus Proofs is entirely trustless, eliminating the need for any external validation entity. Its security and consensus are fully and solely derived from the underlying blockchains and the mathematically-sound proofs outputted by the network.<br><br>Even in the case of a 2/3 stake attack toward the Prover network, ZK-proof generation is not affected; only slight liveness issues may occur.<br><br><i>Being structured as a pure ZK system, Brevis ZK Coprocessor is extremely airtight toward potential safety exploits. In a pure zero-knowledge system like Brevis, consensus is achieved internally through the generation of ZK Consensus Proofs at the zkFabric Prover Network stage.<br><br>Degree of decentralization in the sequencer and the overall Prover network are unknown.</i>",
                   "risk": "low"
                 }
               ]
