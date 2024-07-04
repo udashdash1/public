@@ -75,7 +75,7 @@
               "elements": [
                 {
                   "description": "Decentralization & Security Status",
-                  "comment": "Brevis' Prover Network ensures the generation of ZK Consensus Proofs trustlessly and in-house, eliminating the need for validation from a third-party. Its security and consensus are fully and solely derived from the underlying blockchains and, subsequently, the cryptographically-sound proofs outputted by the network.<br><br>Even in the case of a 2/3 stake attack toward the Prover network, ZK-proof generation is not affected; only slight liveness issues may occur.<br><br><i>In a pure zero-knowledge system like Brevis, consensus is achieved internally through the generation of the ZK Consensus Proofs, making it an extremely airtight system against potential safety faults.<br><br>Degree of decentralization of the Prover network is unknown.</i>",
+                  "comment": "Brevis' Prover Network ensures the generation of ZK Consensus Proofs trustlessly and in-house, eliminating the need for validation from a third-party. Its security and consensus are fully and solely derived from the underlying blockchains and the cryptographically-sound proofs outputted by the network, subsequently.<br><br>Even in the case of a 2/3 stake attack toward the Prover network, ZK-proof generation is not affected; only slight liveness issues may occur.<br><br><i>In a pure zero-knowledge system like Brevis, consensus is achieved internally through the generation of the ZK Consensus Proofs, making it an extremely airtight system against potential safety faults.<br><br>Degree of decentralization of the Prover network is unknown.</i>",
                   "risk": "low"
                 }
               ]
