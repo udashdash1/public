@@ -66,7 +66,7 @@
                 {
                   "description": "Proof & Query Processing Security",
                   "risk": "low",
-                  "comment": "Brevis enables smart contracts to trustlessly access full historical on-chain data, such as states, transactions, and events, from different chains. Developers can build and deploy customized queries using Brevis's SDK, which runs computations and generates off-chain ZK proofs. These results, along with the ZK proofs, are submitted back on-chain for dApps' smart contracts to verify and consume. <br><br><i>Aided by restaked pooled security, advanced ZK cryptographic algorithms, and large-scale parallelization, Brevis to process trustless queries securely and at high throughput.</i>"
+                  "comment": "Brevis coChain enables smart contracts to trustlessly access full historical on-chain data from different chains. dApp developers can build and deploy customized queries using Brevis's SDK, which runs computations and generates off-chain ZK proofs. The query results, along with the ZK proofs, are submitted back on-chain for dApps' smart contracts to verify and consume. <br><br><i>Aided by restaked pooled security, advanced ZK cryptographic algorithms, and large-scale parallelization, Brevis to process trustless queries securely and at high throughput.</i>"
                 }
               ]
             },
