@@ -1,0 +1,27 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          DEPLOY_HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          const deployHook = `https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/${process.env.DEPLOY_HOOK}`;
+          fetch(deployHook, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }).then(() => console.log("deploy triggered!"));
+        shell: node
