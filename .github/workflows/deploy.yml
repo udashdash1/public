@@ -17,11 +17,5 @@ jobs:
         env:
           DEPLOY_HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
         run: |
-          const deployHook = `https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/${process.env.DEPLOY_HOOK}`;
-          fetch(deployHook, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }).then(() => console.log("deploy triggered!"));
-        shell: node
+          curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/${DEPLOY_HOOK}" \
+          -H "Content-Type: application/json"
