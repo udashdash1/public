@@ -91,7 +91,7 @@
               {
                 "description": "Decentralization & Security Status",
                 "risk": "low",
-                "comment": "BFT consensus imposes minimum thresholds of 1/3 or 2/3 validator agreement for liveness and safety guarantees, respectively. <br><br>EigenDA has introduced new low node requirements to promote decentralization and increased throughput. The minimum node requirement for validator participation is only 0.5MB/s (three orders of magnitude lower than current standards); the more stake delegated, the more node bandwidth becomes available. <br><br><i>At scale, TEE and DVT would potentially still be worth considering.</i>"
+                "comment": "BFT consensus imposes minimum thresholds of 1/3 and 2/3 validator agreement for liveness and safety guarantees, respectively. <br><br>EigenDA has introduced new low node requirements to promote decentralization and increased throughput. The minimum node requirement for validator participation is only 0.5MB/s (three orders of magnitude lower than current standards); the more stake delegated, the more node bandwidth becomes available. <br><br><i>At scale, TEE and DVT would potentially still be worth considering.</i>"
               }
             ]
           }
