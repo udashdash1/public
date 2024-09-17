@@ -69,7 +69,7 @@
             "name": "Rollups",
             "elements": [
               {
-                "description": "Blob Sequencer Decentralization & Bandwidth",
+                "description": "Blob Sequencer Decentralization & Bandwidth Reservation",
                 "risk": "low",
                 "comment": "EigenDA allows rollup nodes to interact directly with a majority of EigenDA nodes, alleviating centralization pressures by bypassing the need for a single leader to order the data. Existing solutions rely on a single leader to sequence blobs, introducing a potential censorship chokepoint. <br><br>Furthermore, rollups on EigenDA can now reserve a chunk of bandwidth (1MB/s, e.g), helping alleviate current data congestion issues, surge pricing, and fluctuating gas fees. Throughput is greatly increased as a result."
               }
