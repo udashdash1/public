@@ -68,7 +68,7 @@
               "elements": [
                 {
                   "description": "Data Processing & Verification",
-                  "comment": "Chain validators run EO-chain (eOracle’s dedicated chain) software, processing transactions from Data Validators and enabling smart contracts to validate and aggregate data. They store cryptographic proofs of actions on the EO-chain for public access, while ensuring neutral aggregation and cryptographic validation. Acting as a transparent data and settlement layer, the EO-chain handles off-chain observations and on-chain verification. <br><br>EO-chain’s architecture (in section below) provides full transparency, immutability of records, and a decentralized incentive structure while offloading computation from target chains..",
+                  "comment": "Chain validators run EO-chain (eOracle’s dedicated chain) software, processing transactions from Data Validators and enabling smart contracts to validate and aggregate data. They store cryptographic proofs of actions on the EO-chain for public access, while ensuring neutral aggregation and cryptographic validation; acting as a transparent data and settlement layer, the EO-chain handles off-chain observations and on-chain verification. <br><br>EO-chain’s architecture (in section below) provides full transparency, immutability of records, and a decentralized incentive structure while offloading computation from target chains.",
                   "risk": "low"
                 }
               ]
