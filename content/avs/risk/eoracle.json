@@ -10,9 +10,9 @@
               "name": "Business Model",
               "elements": [
                 {
-                  "description": "Dual Staking + Rollup Custom Quorum",
-                  "risk": "low",
-                  "comment": "EigenDA uses Dual Staking of ETH and EIGEN, where EIGEN stakers can be forked for data availability assurance. Rollups are also allowed to integrate their own token quorum so that DA commitments are validated by both the default EigenDA quorum and the custom rollup quorum. <br><br>While native rollup staked tokens and the unknown DeFi risk profile of EIGEN may introduce moderate initial risks, the strong quorum composition establishes a robust business model, where all quorums must be compromised in order for EigenDA to fail, which appears challenging to execute."
+                  "description": "Dual Staking",
+                  "risk": "medium",
+                  "comment": "eOracle employs Dual Staking of both ETH and its native EO token, featuring a Dual Quorum: ETH quorum + EO quorum. For the AVS to fail, both quorums must be compromised. <br><br>Dual Staking involves moderate risk as it relies on both ETH restakers and EO native token stakers, adding complexity to token security and value dynamics, relative to safer AVS business models like Pure Wallet (restaked ETH solo)."
                 }
               ]
             },
@@ -20,15 +20,15 @@
               "name": "Protocol Security",
               "elements": [
                 {
-                  "description": "Code Audits & GitHub Code Coverage",
-                  "comment": "One <a href=\"https://github.com/Layr-Labs/eigenlayer-middleware/tree/dev/audits\">code audit</a> performed by one entity only. <br><br>Code coverage percentage measures the extent of EigenDA code tested by automated tests, calculated as the ratio of tested lines or branches to the total in the codebase. Higher percentages suggest more comprehensive testing and a reduced likelihood of latent bugs in EigenDA. It sits at around <b>55%</b>, as of 9/17/2024.",
+                  "description": "Code Audits & Code Coverage",
+                  "comment": "8 audits performed by 4 separate entities. <i>Although an overly quantitative metric, different entities performing audits attests to the high security of the protocol.</i> <br><br>The code coverage for this AVS is very high, although not publicly disclosed. <br><br>The code complexity of the protocol is deemed to be high.",
                   "links": [
                     {
                       "label": "view github",
-                      "href": "https://github.com/Layr-Labs/eigenda"
+                      "href": "https://github.com/Eoracle"
                     }
                   ],
-                  "risk": "medium"
+                  "risk": "low"
                 }
               ]
             },
@@ -38,11 +38,11 @@
                 {
                   "description": "Reputation & Entrenchment Status",
                   "risk": "high",
-                  "comment": "Since we are at the very early stages of EigenLayer, operators' performance reputation was classified as unknown. Operator's entrenchment level indicates how entrenched EigenDA's operators are validating other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context. <br><br><i>All AVSs are assigned a high operator profile risk at this early stage.</i>",
+                  "comment": "Since we are at the very early stages of EigenLayer, operators' performance reputation was classified as unknown. Operator's entrenchment level indicates how entrenched eOracle's operators are validating other AVSs. The small number of AVSs currently live helps exacerbate this risk, in a pooled security context. <br><br><i>All AVSs are assigned a high operator profile risk at this early stage.</i>",
                   "links": [
                     {
                       "label": "view full operator list",
-                      "href": "https://app.eigenlayer.xyz/avs/0x870679e138bcdf293b7ff14dd44b70fc97e12fc0"
+                      "href": "https://app.eigenlayer.xyz/avs/0x23221c5bb90c7c57ecc1e75513e2e4257673f0ef"
                     }
                   ]
                 }
@@ -51,35 +51,35 @@
           ]
         },
         {
-          "category": "EigenDA Protocol",
+          "category": "eOracle Protocol",
           "risks": [
             {
-              "name": "Rollups",
+              "name": "Data Validators",
               "elements": [
                 {
-                  "description": "Blob Sequencer Decentralization & Bandwidth Reservation",
+                  "description": "Data Reporting Security",
                   "risk": "low",
-                  "comment": "EigenDA allows rollup nodes to interact directly with a majority of EigenDA nodes, alleviating centralization pressures by bypassing the need for a single leader to order the data. Existing solutions rely on a single leader to sequence blobs, introducing a potential censorship chokepoint. <br><br>Furthermore, rollups on EigenDA can now reserve a chunk of bandwidth (1MB/s, e.g), helping alleviate current data congestion issues, surge pricing, and fluctuating gas fees — throughput is greatly increased as a result."
+                  "comment": "Data validators ensure network integrity by collecting and reporting accurate and timely data, secured through cryptographic proofs (including threshold-BLS signatures). Their performance is tied to a system of rewards and penalties, including slashing for misbehavior. <br><br>eOracle uses a wide range of established third-party data providers, minimizing the probability of single points of failure and reducing risks of collusion. <br><br><i>Features to improve privacy and security across the whole data workflow, like TLS, are being actively researched by the eOracle team.</i>"
                 }
               ]
             },
             {
-              "name": "Disperser",
+              "name": "Chain Validators (Execution Layer)",
               "elements": [
                 {
-                  "description": "Disperser Communication & Security Status",
-                  "comment": "EigenDA's Disperser sends blobs straight to its operators through direct communication (unicast). In traditional methods, operators receive data blobs from peers and re-broadcast them to others, impacting liveness. Furthermore, the Disperser is built on KZG commitments and multi-reveal proofs rather than fraud proofs, making it possible to instantly verify correctness of coding. <br><br>Disperser permissionlessness and DAS (data availability sampling) for data verifiability are next in the roadmap. Currently, EigenDA uses a single permissioned Disperser to send data to its nodes, causing a liveness bottleneck. Once permissionless payments go live, the Disperser will be made permissionless, allowing any rollup sequencer to operate its own. Additionally, its usage of KZG polynomial coding ensures compatibility with DAS, to enhance verifiability, on a next release. <br><br>For more details, check <a href=\"https://eigenda.wtf/\">eigenda.wtf</a> and its blob explorer <a href=\"https://blobs.eigenda.xyz/\">here</a>.",
+                  "description": "Data Processing & Verification",
+                  "comment": "Chain validators run EO-chain (eOracle/’s dedicated chain) software, processing transactions from Data Validators and enabling smart contracts to validate and aggregate data. They store cryptographic proofs of actions on the EO-chain for public access, while ensuring neutral aggregation and cryptographic validation. Acting as a transparent data and settlement layer, the EO-chain handles off-chain observations and on-chain verification. <br><br>EO-chain/’s architecture (in section below) provides full transparency, immutability of records, and a decentralized incentive structure while offloading computation from target chains..",
                   "risk": "low"
                 }
               ]
             },
             {
-              "name": "BFT Validator Profile",
+              "name": "eBFT (Consensus Layer)",
               "elements": [
                 {
-                  "description": "Decentralization & Security Status",
+                  "description": "Finality and Security Architecture",
                   "risk": "low",
-                  "comment": "BFT consensus imposes minimum thresholds of 1/3 and 2/3 validator agreement for liveness and safety guarantees, respectively. <br><br>EigenDA has introduced new low node requirements to promote decentralization and increased throughput. The minimum node requirement for validator participation is only 0.5MB/s (three orders of magnitude lower than current standards); the more stake delegated, the more node bandwidth becomes available. <br><br><i>At scale, TEE and DVT would potentially still be worth considering.</i>"
+                  "comment": "EO-chain is an independent PoS blockchain operated by EigenLayer operators. It uses eBFT as the consensus mechanism, which is based on BFT consensus principles, imposing the traditional minimum thresholds of 1/3 and 2/3 validator agreement for liveness and safety guarantees. <br><br>eBFT is built to enable permissionless validator selection, frequent block proposer rotation over time (Tendermint), immediate block finality, reduced latency in block production and execution, and high data integrity and fault tolerance. <br><br><i>At scale, TEE and DVT would potentially be worth considering.</i>"
                 }
               ]
             }
