@@ -12,7 +12,7 @@
                 {
                   "description": "Dual Staking",
                   "risk": "medium",
-                  "comment": "eOracle employs Dual Staking of both ETH and its native EO token, featuring a Dual Quorum: ETH quorum + EO quorum. For the AVS to fail, both quorums must be compromised. <br><br>Dual Staking involves moderate risk as it relies on both ETH restakers and EO native token stakers, adding complexity to token security and value dynamics, relative to safer AVS business models like Pure Wallet (restaked ETH solo)."
+                  "comment": "eOracle employs Dual Staking of both ETH and its native EO token, featuring a Dual Quorum: ETH quorum + EO quorum. Both quorums must be compromised for the AVS to fail. <br><br>Dual Staking involves moderate risk as it relies on both ETH restakers and EO native token stakers, adding complexity to token security and value dynamics, relative to safer AVS business models like Pure Wallet (restaked ETH solo)."
                 }
               ]
             },
