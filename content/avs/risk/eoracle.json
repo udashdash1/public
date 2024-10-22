@@ -12,7 +12,7 @@
                 {
                   "description": "Dual Staking",
                   "risk": "low",
-                  "comment": "eOracle employs Dual Staking of both ETH and its native token (TBD), featuring a Dual Quorum: ETH quorum + Native Token quorum. Both quorums must be compromised for the AVS to fail. <br><br>Dual Staking involves low risk as it relies on both ETH restakers and native token stakers, for objective as well as intersubjective slashing scenarios. Pure Wallet (restaked ETH solo) on its own can appear as the safest model although it misses the virtue of covering potential intersubjective faults."
+                  "comment": "eOracle employs Dual Staking of both ETH and its native token (TBD), featuring a Dual Quorum: ETH quorum + Native Token quorum. Both quorums must be compromised for the AVS to fail. <br><br>Dual Staking constitutes a reduced risk business model as it relies on both ETH restakers and native token stakers for objective and (soon) intersubjective slashing scenarios. Pure Wallet (restaked ETH solo) on its own can appear as the safest model although it misses the virtue of covering potential intersubjective faults."
                 }
               ]
             },
