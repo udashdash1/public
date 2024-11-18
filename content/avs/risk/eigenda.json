@@ -1,6 +1,6 @@
 {
   "name": "EigenDA",
-  "published": true,
+  "published": false,
   "research": [
     {
       "author": "tokensight",
@@ -24,7 +24,7 @@
               {
                 "description": "Dual Staking + Rollup Custom Quorum",
                 "risk": "low",
-                "comment": "EigenDA uses Dual Staking of ETH and EIGEN, where EIGEN stakers can be forked for data availability assurance. Rollups are also allowed to integrate their own token quorum so that DA commitments are validated by both the default EigenDA quorum and the custom rollup quorum. <br><br>While native rollup staked tokens and the unknown DeFi risk profile of EIGEN may introduce moderate initial risks, the strong quorum composition establishes a robust business model, where all quorums must be compromised in order for EigenDA to fail, which appears challenging to execute."
+                "comment": "EigenDA uses Dual Staking of ETH and EIGEN, where EIGEN stakers can be forked for data availability assurances. Rollups are also allowed to integrate their own token quorum so that DA commitments are validated by both the default EigenDA quorum and the custom rollup quorum. <br><br>While native rollup staked tokens and the unknown DeFi risk profile of EIGEN may introduce moderate initial risks, the strong quorum composition and the ability to soon slash intersubjective faults establish a robust business model, where all quorums must be compromised in order for EigenDA to fail, which appears challenging to execute. <br><br><i>Being mindful in setting a biased staking balance in favor of ETH is strongly advised for added security, particularly at the early stage of an AVS.</i>"
               }
             ]
           },
