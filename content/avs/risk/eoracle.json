@@ -1,6 +1,6 @@
 {
     "name": "eoracle",
-    "published": false,
+    "published": true,
     "riskAnalysis": {
       "sections": [
         {
@@ -21,7 +21,7 @@
               "elements": [
                 {
                   "description": "Code Audits & Code Coverage",
-                  "comment": "8 audits performed by 4 separate entities. <i>Although an overly quantitative metric, different entities performing audits attests to the high security of the protocol.</i> <br><br>The code coverage for this AVS is very high, although not publicly disclosed. <br><br>The code complexity of the protocol is deemed to be high.",
+                  "comment": "8 audits performed by 4 separate entities. <i>Although an overly quantitative metric, different entities performing audits attests to the high security of the protocol.</i> <br><br>The code coverage for this AVS is very high, although not publicly disclosed. <br><br>The code complexity of the protocol is deemed to be high too.",
                   "links": [
                     {
                       "label": "view github",
